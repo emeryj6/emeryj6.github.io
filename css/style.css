@@ -1,0 +1,114 @@
+body {
+    background-color: blanchedalmond;
+}
+
+h1 {
+    color: crimson;
+    font-size: 70px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+h2 {
+    color: darkslategrey;
+    font-size: 40px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.cursive {
+    font-family: cursive;
+}
+
+hr {
+    color: crimson;
+    width: 50%;
+    margin: 10px auto;
+}
+
+img.flipped {
+    transform:scaleX(-1);
+}
+
+img.right_owl {
+    float: right;
+}
+
+img.owl {
+    width: 10%;
+    height: 10%;
+    /* To evenly space between hr: (25% - 10%) / 2 = 7.5% */
+    margin: 10px 7.5%;
+    filter: invert(50%) drop-shadow(0 0 0 darkslategrey);
+    /* Not very elegant, needs to be a better way
+    Inspired from: https://stackoverflow.com/a/53206065*/
+}
+
+div.art_display {
+    margin: 20% auto;
+}
+
+div.art_display img.art {
+    max-height: 40vmax;
+    display: block;
+    padding: 4px;
+    margin: auto;
+}
+
+div.art_display h3.art_description {
+    margin: 8px auto 0 auto;
+    text-align: center;
+    color: darkslategrey;
+    font-family: georgia;
+    font-variant: small-caps;
+    font-size:larger;
+}
+
+div.art_display h4.artist {
+    margin: 0;
+    text-align: center;
+    color: darkslategrey;
+    font-family: garamond;
+    font-size:large;
+}
+
+img.art#border_1 {
+    border-style: double;
+    border-width: medium;
+    border-color: darkslateblue;
+}
+
+img.art#border_2 {
+    border-style: ridge;
+    border-width: thick;
+    border-color: lightskyblue;
+}
+
+img.art#border_3 {
+    border-style: solid;
+    border-width: medium;
+    border-color: goldenrod;
+}
+
+img.art#border_4 {
+    border-style: double;
+    border-width: thick;
+    border-color: rgb(218, 61, 30);
+}
+
+img.art#border_5 {
+    border-style: dotted;
+    border-width: medium;
+    border-color: rgb(30, 131, 134);
+}
+
+/* Something at the back of our Lourve? */
+br#down_the_back {
+    margin: 100% auto;
+}
+
+img.art#border_6 {
+    border-style: dashed;
+    border-width: medium;
+    border-color: rgb(220, 64, 99);
+}
