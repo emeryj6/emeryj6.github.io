@@ -38,6 +38,23 @@ img {
     float: right;
 }
 
+img.i2 {
+    position: absolute;
+    padding: 20px 0px 0px 20px;
+    width: 100px;
+    height: 100px;
+}
+
+img.ufo_overlay {
+    position: absolute;
+    width: 67.5px;
+    height: auto;
+}
+
+img.ufo {
+    padding: 40px 0;
+}
+
 /* Quick options for smaller space */
 img.p5 {
     width: 5%;
@@ -78,4 +95,8 @@ img.flipped {
 
 .spacer {
     height: 400px
+}
+
+.smallspacer {
+    height: 200px
 }
