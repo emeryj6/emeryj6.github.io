@@ -1,0 +1,81 @@
+/*div {
+    color: teal;
+    background-color: powderblue;
+    border: black 10px solid;
+    box-sizing: border-box;
+    padding: 3rem;
+    margin: 30px;
+}*/
+
+h1#title {
+    color: white;
+    padding: 30px;
+    margin: 0;
+    text-align: center;
+}
+
+#sky {
+    background: linear-gradient(rgba(0,0,0,1) 0%, rgba(94,40,191,1) 70%, rgba(182,141,255,1) 100%);
+    width: 100%;
+}
+
+#cliff {
+    background: linear-gradient(rgba(2,0,36,1) 0%, rgba(39,33,28,1) 59%, rgba(105,91,54,1) 100%);
+    border-right: dimgray 5px solid;
+    width: 50%;
+}
+
+#ocean {
+    background: linear-gradient(rgba(2,0,36,1) 0%, rgba(0,141,180,1) 100%);
+    width: 50%;
+    float:left;
+}
+
+/* Default to taking up the full space in a column */
+img {
+    width: 100%;
+    height: 100%;
+    float: right;
+}
+
+/* Quick options for smaller space */
+img.p5 {
+    width: 5%;
+    height: 5%;
+}
+
+img.p20 {
+    width: 20%;
+    height: 20%;
+}
+
+img.p50 {
+    width: 50%;
+    height: 50%;
+}
+
+img.p70 {
+    width: 70%;
+    height: 70%;
+}
+
+img.p200 {
+    width: 200%;
+    height: 200%;
+}
+
+.aright {
+    float: right;
+}
+
+img.flipped {
+    transform: scaleX(-1);
+}
+
+.rotate270 {
+    transform: rotate(270deg);
+}
+
+.spacer {
+    height: 400px
+}
