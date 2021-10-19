@@ -1,12 +1,3 @@
-/*div {
-    color: teal;
-    background-color: powderblue;
-    border: black 10px solid;
-    box-sizing: border-box;
-    padding: 3rem;
-    margin: 30px;
-}*/
-
 h1#title {
     color: white;
     padding: 30px;
@@ -15,20 +6,8 @@ h1#title {
 }
 
 #sky {
-    background: linear-gradient(rgba(0,0,0,1) 0%, rgba(94,40,191,1) 70%, rgba(182,141,255,1) 100%);
+    background: linear-gradient(rgba(0,0,0,1) 0%, rgb(98, 41, 204) 100%);
     width: 100%;
-}
-
-#cliff {
-    background: linear-gradient(rgba(2,0,36,1) 0%, rgba(39,33,28,1) 59%, rgba(105,91,54,1) 100%);
-    border-right: dimgray 5px solid;
-    width: 50%;
-}
-
-#ocean {
-    background: linear-gradient(rgba(2,0,36,1) 0%, rgba(0,141,180,1) 100%);
-    width: 50%;
-    float:left;
 }
 
 /* Default to taking up the full space in a column */
@@ -38,21 +17,57 @@ img {
     float: right;
 }
 
-img.i2 {
-    position: absolute;
-    padding: 20px 0px 0px 20px;
-    width: 100px;
-    height: 100px;
-}
-
-img.ufo_overlay {
+img#ufo_overlay {
     position: absolute;
     width: 67.5px;
     height: auto;
 }
 
-img.ufo {
+img#ufo {
     padding: 40px 0;
+}
+
+img#satellite_dish {
+    height: 360px;
+    width: auto;
+}
+
+img#forest1_overlay {
+    position: absolute;
+    padding-top: 80px;
+    height: 280px;
+    width: auto;
+}
+
+img#forest2_overlay {
+    position: absolute;
+    padding: 160px 0 0 90px;
+    height: 200px;
+    width: auto;
+}
+
+img#tent {
+    padding-top: 270px;
+    height: 90px;
+    width: auto;
+}
+
+img#campfire {
+    padding-top: 320px;
+    height: 40px;
+    width: auto;
+}
+
+img#picnic_table {
+    padding: 325px 0 0 20px;
+    height: 35px;
+    width: auto;
+}
+
+img#forest3 {
+    padding-top: 200px;
+    height: 160px;
+    width: auto;
 }
 
 /* Quick options for smaller space */
@@ -76,21 +91,8 @@ img.p70 {
     height: 70%;
 }
 
-img.p200 {
-    width: 200%;
-    height: 200%;
-}
-
-.aright {
-    float: right;
-}
-
 img.flipped {
     transform: scaleX(-1);
-}
-
-.rotate270 {
-    transform: rotate(270deg);
 }
 
 .spacer {
