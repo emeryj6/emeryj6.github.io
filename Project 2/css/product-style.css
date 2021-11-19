@@ -1,0 +1,328 @@
+/* Custom styling for product page submission */
+
+/* Header Styling */
+
+/* Clickable logo that didn't turn orange on hover like the other links seemed
+   out of place, so I added a hidden orange version that shows on hover */
+.logo-hover {
+    /* Necessary to prevent logo turning orange when hovering to right of it */
+    display: inline-block;
+}
+
+.logo-hover img#logo-overlay {
+    position: absolute;
+}
+
+.logo-hover img#logo-underlay {
+    opacity: 0;
+}
+
+/* On hover, change opacitiy to hide brown logo and show orange logo */
+.logo-hover:hover img#logo-overlay {
+    opacity: 0;
+}
+
+.logo-hover:hover img#logo-underlay {
+    opacity: 1;
+}
+
+/* The download link in the header should also turn orange */
+header li#download-link a:hover {
+	color: #ffffff; /* white */
+	background: #c94a00; /* orange */
+    border-color: #c94a00; /* orange */
+}
+
+
+/* Jumbotron Styling */
+
+#product-jumbotron {
+    /* Photo from: https://unsplash.com/photos/rthxdhNw06M */
+	background-image: url("../images/product/product-hero.jpg");
+    background-position: center;
+	background-size: cover;
+	background-color: #1f1f1f; /* dark grey */
+	height: 750px;
+}
+
+#product-jumbotron h1 {
+    margin-top: 150px;
+    margin-bottom: 25px;
+    color: #ffffff; /* white */
+    text-transform: uppercase;
+    font-size: 70px;
+    font-weight: 300;
+}
+
+#product-jumbotron h1 span {
+    font-weight: 700;
+}
+
+#product-jumbotron a {
+	color: #ffffff; /* white */
+	font-weight: normal;
+}
+
+#product-jumbotron a:hover {
+	color: #c94a00; /* orange */
+}
+
+
+/* Writing Section Styling */
+
+#writing {
+    margin-top: 50px;
+    color: #1f1f1f; /* dark grey */
+}
+
+/* This question helped me figure out sticky positioning: 
+https://stackoverflow.com/a/54472109 */
+img#pencil-write {
+    float: right;
+    position: sticky;
+    top: 85vh;
+    margin: 30px 0;
+    width: 300px;
+    /* These transition properties make for smoother changing when un-hovering */
+    transition: 0.5s ease;
+    z-index: 6;
+}
+
+#writing:hover img#pencil-write {
+    transform: scale(1.1);
+    transform-origin: right;
+    transition: 0.5s ease;
+}
+
+img#notebook {
+    width: 100%;
+    z-index: -1;
+}
+
+#notebook-left {
+    position: absolute;
+    margin-top: 130px;
+    text-align: right;
+}
+
+img#iss {
+    padding-right: 15px;
+    height: 300px;
+    opacity: 0;
+    transition: 0.5s ease;
+    z-index: 1;
+}
+
+img#equations {
+    margin-top: 60px;
+    padding-left: 30px;
+    opacity: 0;
+    transition: 0.5s ease 1s;
+    z-index: 1;
+}
+
+#notebook-left h2 {
+    margin-top: 130px;
+    padding-right: 40px;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+#notebook-right {
+    position: absolute;
+    margin-top: 5%;
+    text-align: left;
+}
+
+/* Notebook Hover Effects */
+
+#hover-writing:hover img#iss {
+    opacity: 1;
+    transition: 2s ease;
+}
+
+#hover-writing:hover img#equations {
+    opacity: 1;
+    transition: 2s ease 1s;
+}
+
+
+/* Erasing Section Styling */
+/* Need to use padding instead of margin, otherwise there was a section where
+the cursor wouldn't trigger the note-book hover */
+#erasing {
+    padding-top: 50px;
+    color: #1f1f1f; /* dark grey */
+}
+
+/* I wanted to add a margin to the top and bottom like I did for the first
+pencil, however it required floating and messed up the scantron answer positioning */
+img#pencil-erase {
+    position: sticky;
+    /* float: left;
+    margin: 30px 0; */
+    top: 15vh;
+    width: 300px;
+    transition: 0.5s ease;
+    z-index: 2;
+}
+
+#erasing:hover img#pencil-erase {
+    transform: scale(1.1);
+    transform-origin: left;
+    transition: 0.5s ease;
+}
+
+img#scantron {
+    padding: 0 15px;
+    width: 100%;
+    z-index: -1;
+}
+
+#scantron-answers {
+    position: absolute;
+    z-index: 1;
+}
+
+/* Scantron Explanation
+Scantron answers are just transparent pngs overlaid on the scantron. This was 
+the easiest way to avoid having to calculate positioning. All of the answer 
+layers are layered, then slowly fade away revealing the "right" one */
+#scantron-answers img {
+    position: absolute;
+    padding: 0 15px;
+}
+
+img#scantron-answers-1 {
+    opacity: 1;
+    transition: 0.5s ease;
+}
+
+img#scantron-answers-2 {
+    opacity: 1;
+    transition: 0.5s ease;
+}
+
+/* Scantron Hover Effects */
+#hover-erasing:hover img#scantron-answers-1 {
+    opacity: 0;
+    transition: 1.5s ease 0.5s;
+}
+
+#hover-erasing:hover img#scantron-answers-2 {
+    opacity: 0;
+    transition: 1.5s ease 1.5s;
+}
+
+/* Love Note Styling */
+
+h3#bad-love-note {
+    padding: 90px 25px 0 25px;
+    font-size: 38px;
+    font-family: 'Indie Flower', cursive;
+    opacity: 0.85;
+    transition: 0.5s ease;
+}
+
+#love-note-overlay {
+    position: absolute;
+}
+
+h3#good-love-note {
+    padding: 150px 25px 0 25px;
+    font-size: 38px;
+    font-family: 'Indie Flower', cursive;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+#love-note-underlay h2 {
+    margin-top: 140px;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+/* Love Note Hover Effects */
+#hover-erasing:hover h3#bad-love-note {
+    opacity: 0;
+    transition: 1s ease 2.5s;
+}
+
+#hover-erasing:hover h3#good-love-note {
+    opacity: 0.85;
+    transition: 1s ease 3s;
+}
+
+
+/* Journaling Styling */
+
+#journaling {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    color: #1f1f1f; /* dark grey */
+}
+
+img#journal {
+    width: 100%;
+    z-index: -1;
+}
+
+#journal-underlay {
+    position: absolute;
+    margin-top: 110px;
+}
+
+h3#bad-journal-entry {
+    font-size: 38px;
+    font-family: 'Indie Flower', cursive;
+    opacity: 0.85;
+    transition: 0.5s ease;
+}
+
+#journal-underlay h2 {
+    text-align: right;
+    margin-top: 40px;
+    padding-left: 70px;
+    padding-right: 30px;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+#journal-overlay {
+    position: absolute;
+    margin-top: 110px;
+}
+
+h3#good-journal-entry {
+    font-size: 38px;
+    font-family: 'Indie Flower', cursive;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+/* Journal Hover Effects */
+
+#hover-journaling:hover h3#bad-journal-entry {
+    opacity: 0;
+    transition: 1s ease 2.5s;
+}
+
+#hover-journaling:hover h3#good-journal-entry {
+    opacity: 0.85;
+    transition: 1s ease 3s;
+}
+
+
+/* Footer Styling */
+
+#product-footer {
+    position: relative;
+    display: block;
+}
+
+#product-footer img {
+    width: 100%;
+    /* There was some extra space at the bottom of the footer I couldn't get
+    rid of for some reason, a negative margin seemed to fix it */
+    margin-bottom: -20px;
+}

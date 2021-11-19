@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Pencil No. 2</title>
+	<!-- Use the same style.css style sheet and font as home page -->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/grid.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/product-style.css"> <!-- New style sheet just for the product page -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+	
+	<!-- In keeping the formatting the same as the home page, some of the header formatting was copied -->
+	<header class="container">
+		<div class="row">
+			<div class="col-4 offset-1">
+				<section class="logo-hover">
+					<a href="index.html"><img id="logo-overlay" src="images/logo-53.png" alt="Logo"></a>
+					<img id="logo-underlay" src="images/product/logo-53-header-hover.png" alt="Logo">
+				</section>
+			</div>
+			<nav class="col-7">
+				<ul>
+					<li class="added-margin"><a href="interior.html">Think</a></li>
+					<li class="added-margin"><a href="#">Paper</a></li>
+					<li class="added-margin"><a href="#">Pencil</a></li>
+					<li class="added-margin"><a href="#">Mix</a></li>
+					<li class="added-margin"><a href="#">Shop</a></li>
+					<li id="download-link"><a href="#">Download</a></li>
+					<li id="facebook-icon"><a href="http://www.facebook.com" target="_blank"><img src="images/icon-facebook.png" alt="Facebook"></a></li>
+					<li id="twitter-icon"><a href="http://www.twitter.com" target="_blank"><img src="images/icon-twitter.png" alt="Twitter"></a></li>
+				</ul>
+			</nav>
+		</div> <!-- .row -->
+	</header>
+
+	<!-- Jumbotron -->
+	<section class="container-fluid" id="product-jumbotron">
+		<div class="container">
+			<div class="row">
+				<section class="col-6 offset-1">
+					<h1><span>No. 2 Pencil</span> <br> Graphite delivery system</h1>
+					<!-- Link to exisiting "buy now" page from fiftythree -->
+					<a href="https://madewithpaper.fiftythree.com/private/81359156358/tumblr_n3c2i9vP2X1r664h6" id="buy-now">Buy now</a>
+				</section>
+			</div> <!-- .row -->
+		</div> <!-- .container -->
+	</section>
+
+	<!-- Sections need to be nested so the hover effects stay as the page scrolls down -->
+	<!-- Writing -->
+	<span id="hover-writing">
+		<section class="container-fluid" id="writing">
+			<!-- Photo from: https://unsplash.com/photos/Md9H3aeXFHE -->
+			<img id="pencil-write" src="images/product/pencil-write.png">
+			<div class="container">
+				<div class="row">
+					<section class="col-10 offset-1">
+						<!-- Photo from: https://unsplash.com/photos/IZj7vckPGiw -->
+						<img id="notebook" src="images/product/notebook.jpg">
+					</section>
+					<section class="col-4 offset-2" id="notebook-left">
+						<!-- Photo from: https://unsplash.com/photos/ZE0X3vAnBvs -->
+						<img id="iss" src="images/product/iss.png">
+						<h2>From school notebooks to the ISS, the No. 2 Pencil lasts</h2>
+					</section>
+					<section class="col-4 offset-6" id="notebook-right">
+						<!-- Photo from: https://unsplash.com/photos/zm1oNbYS7DY -->
+						<img id="equations" src="images/product/equations.png">
+					</section>
+				</div>
+			</div>
+		</section>
+
+		<!-- Erasing -->
+		<span id="hover-erasing">
+			<section class="container-fluid" id="erasing">
+				<!-- Photo from: https://unsplash.com/photos/T-GjUWPW-oI -->
+				<img id="pencil-erase" src="images/product/pencil-erase.png">
+				<section class="container">
+					<div class="row">
+						<section class="col-4 offset-2">
+							<!-- Photo from pdf: https://store.scantron.com/OA_HTML/ibeCCtpItmDspRte.jsp?section=10607&item=318386&sitex=10022:22372:US -->
+							<img id="scantron" src="images/product/scantron.jpg">
+						</section>
+						<section class="col-4 offset-2" id="scantron-answers">
+							<img id="scantron-answers-1" src="images/product/scantron-answers-1.png">
+							<img id="scantron-answers-2" src="images/product/scantron-answers-2.png">
+							<img id="scantron-answers-3" src="images/product/scantron-answers-3.png">
+						</section>
+						<section class="col-5" id="love-note-underlay">
+							<h3 id="bad-love-note">Hey Lucy how are you? I really think we might have a lot in common and I was wondering if maybe you would like to...</h3>
+							<h2>No mistake is too big for the patented RubbaRace&trade;</h2>
+						</section>
+						<section class="col-5 offset-6" id="love-note-overlay">
+							<h3 id="good-love-note">Hey Lucy want to go to prom?</h3>
+						</section>
+					</div>
+				</section>
+			</section>
+
+			<!-- Journaling -->
+			<span id="hover-journaling">
+				<section class="container" id="journaling">
+					<div class="row">
+						<section class="col-10 offset-1">
+							<!-- Photo from: https://unsplash.com/photos/9n1USijYJZ4 -->
+							<img id="journal" src="images/product/journal.jpg">
+						</section>
+						<section class="col-4 offset-2" id="journal-underlay">
+							<h3 id="bad-journal-entry">Dear Diary,<br><br>Today SUCKED! I bombed my physics exam and Lucy said no :(</h3>
+							<h2>The power to rewrite the future is in your grasp</h2>
+						</section>
+						<section class="col-4 offset-2" id="journal-overlay">
+							<h3 id="good-journal-entry">Dear Diary,<br><br>I aced my test and my crush said yes!</h3>
+						</section>
+					</div>
+				</section>
+
+				<!-- Footer -->
+				<section class="container-fluid" id="product-footer">
+					<!-- Photo from: https://unsplash.com/photos/m5rmbvQRiWo -->
+					<img src="images/product/ten-pencils.jpg">
+				</section>
+			</span>
+		</span>
+	</span>
+
+</body>	
+
+</html>
